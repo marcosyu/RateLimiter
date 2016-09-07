@@ -19,4 +19,10 @@ class HomeController < ApplicationController
 		session[:request_count] = nil
 	end
   end
+  #Developer's Note
+  # This function is done manually but also be done by using some gems like
+  # rack-throttle or rate-limit. This code could also be improved by using some
+  # cookie storing gems like redis-rails. I've decided to code it manually as I
+  # could easily change / update it if needed in the future as even though gems
+  # are the most efficient they still have limitations also.
 end
